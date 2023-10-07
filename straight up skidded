@@ -211,7 +211,23 @@ if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 
     local singleNull= Combat1:CreateButton("1 Time Null", function()
 	game:GetService("ReplicatedStorage").NullAbility:FireServer()
     end)
-	
+
+    local rocketLauncher= Combat1:CreateButton("Rocket Retro", function()
+	game:GetService("ReplicatedStorage").RetroAbility:FireServer("Rocket Launcher")
+    end)
+
+    local banHammer= Combat1:CreateButton("Hammer Retro", function()
+	game:GetService("ReplicatedStorage").RetroAbility:FireServer("Ban Hammer")
+    end)
+
+    local retroLaunch= Combat1:CreateButton("Retro Bomb", function()
+	game:GetService("ReplicatedStorage"):WaitForChild("RetroAbility"):FireServer("Bomb")
+    end)
+
+    local rojoAbility= Combat1:CreateButton("Rojo Ability", function()
+	game:GetService("ReplicatedStorage"):WaitForChild("RojoAbility"):FireServer("Release", {game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame})
+    end)
+
     local antiFall = Combat2:CreateToggle("Anti Ragdoll", function(bool)
         antiRagdoll = bool
             if bool == true then
