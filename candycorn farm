@@ -203,7 +203,15 @@ if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 
                 end 
             end
     end)
-    
+	
+    local rhythmBoom= Combat1:CreateButton("1 Time Explosion", function()
+	game:GetService("ReplicatedStorage"):WaitForChild("rhythmevent"):FireServer("AoeExplosion", 86)
+    end)
+
+    local singleNull= Combat1:CreateButton("1 Time Null", function()
+	game:GetService("ReplicatedStorage").NullAbility:FireServer()
+    end)
+	
     local antiFall = Combat2:CreateToggle("Anti Ragdoll", function(bool)
         antiRagdoll = bool
             if bool == true then
