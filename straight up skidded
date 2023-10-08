@@ -102,7 +102,25 @@ if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 
 	            end
             end
 	end)
+    local gdGodON = Combat2:CreateButton("Gold Godmode (ON)", function()
+      game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Just in case",
+	Text = "you need golden glove",
+	Duration = 1
+})
+      local args = {
+        [1] = true
+      }
+      game:GetService("ReplicatedStorage"):WaitForChild("Goldify"):FireServer(unpack(args))
+    end)
 
+    local gdGodOFF = Combat2:CreateButton("Gold Godmode (OFF)", function()
+      local args = {
+        [1] = false,
+        [2] = BrickColor.new(102)
+      }
+      game:GetService("ReplicatedStorage"):WaitForChild("Goldify"):FireServer(unpack(args))
+    end)
     
     local slapFarm = Farms1:CreateToggle("Universal Slap Farm", function(bool)
         allFarming = bool
