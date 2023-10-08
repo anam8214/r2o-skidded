@@ -55,7 +55,7 @@ if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 
             if autoBob then
                 while autoBob and task.wait() do
                     game.ReplicatedStorage.Duplicate:FireServer(true);
-                    wait(5.1)
+                    wait(12)
                 end
             end
     end)
@@ -639,7 +639,7 @@ if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 
         end  
     end)
     
-    local discordTag2 = Credits2:CreateButton("᲼᲼  ᲼᲼#4447 guy that made candycorn farm", function()       
+    local discordTag2 = Credits1:CreateButton("᲼᲼  ᲼᲼#4447 skidder", function()       
         if setclipboard then           
             setclipboard("᲼᲼  ᲼᲼#4447")          
         end  
