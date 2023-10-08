@@ -55,7 +55,7 @@ if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 
             if autoBob then
                 while autoBob and task.wait() do
                     game.ReplicatedStorage.Duplicate:FireServer(true);
-                    wait(12)
+                    wait(7)
                 end
             end
     end)
