@@ -651,15 +651,15 @@ if game.PlaceId == 6403373529 or game.PlaceId == 11520107397 or game.PlaceId == 
         end
     end)
     
-    local discordTag2 = Credits2:CreateButton("anakinn#3568", function()       
+    local discordTag2 = Credits2:CreateButton("anakinn#3568 (i cant find the owner's new discord user)", function()       
         if setclipboard then           
             setclipboard("anakinn#3568")          
         end  
     end)
     
-    local discordTag2 = Credits1:CreateButton("᲼᲼  ᲼᲼#4447 skidder", function()       
+    local discordTag2 = Credits1:CreateButton("7h4t81601 (skidder guy)", function()       
         if setclipboard then           
-            setclipboard("᲼᲼  ᲼᲼#4447")          
+            setclipboard("7h4t81601")          
         end  
     end)
     
